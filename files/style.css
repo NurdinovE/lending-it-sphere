@@ -5,6 +5,7 @@ body {
     font-family: 'Figtree';
     width: 100%;
     margin: 0px;
+    background-color: #022C22;
 }
 
 a, .nav__button { /* GET RID OF BLUE COLOR */
@@ -14,11 +15,18 @@ a, .nav__button { /* GET RID OF BLUE COLOR */
     font-size: inherit;
 }
 
-/*******    NAVIGATION    *******/
+.hero-section__image1, .hero-section__image2, .hero-section__image3,
+.hero-section__image4, .hero-section__icon, .nav__logo {
+    background-size: contain;
+    background-repeat: no-repeat; 
+    background-position: center;
+}
 
-.nav, .hero-section {
+.hero-section, .nav {
     background-color: #022C22;
 }
+
+/*******    NAVIGATION    *******/
 
 .nav {
     height: 10vh;
@@ -41,13 +49,10 @@ a, .nav__button { /* GET RID OF BLUE COLOR */
     background-image: url('/icons/Brand_Logo.svg');
     width: 100px; 
     height: 30px; 
-    background-size: contain;
-    background-repeat: no-repeat; 
-    background-position: center;
     margin-right: 20px;
 }
 
-.nav__button {
+.nav__button, .hero-section__button2 {
     padding: 15px 22px;
     background-color: transparent; 
     color: white;
@@ -57,3 +62,115 @@ a, .nav__button { /* GET RID OF BLUE COLOR */
 }
 
 /*******    HERO SECTION    *******/
+
+.hero-section {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 90vh;
+    color: white;
+}
+
+.hero-section__content-wrapper {
+    position: relative;
+    top: -100px;
+    display: flex; 
+    flex-direction: column; 
+    gap: 5px;
+    align-items: center; 
+    width: 592px;
+    height: 430px;
+}
+
+.hero-section__icon {
+    background-image: url('/icons/Caption.svg');
+    position: absolute;
+    top: -5px;
+    width: 500px; 
+    height: 20px; 
+}
+
+.hero-section__title {
+    font-size: 96px;
+    font-weight: 400;
+    line-height: 90px;
+    text-align: center;
+    padding-top: 32px;
+}
+
+.hero-section__sub-title {
+    font-size: 18px;
+    font-weight: 200;
+    line-height: 26px;
+    text-align: center;
+    padding-top: 32px;
+    width: 90%;
+}
+
+.hero-section__button-wrapper {
+    margin-top: 32px;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.hero-section__button1, .hero-section__button2 {
+    font-size: 18px;
+    font-weight: 500;
+    padding: 15px 22px;
+    border-radius: 200px;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.hero-section__button1 {
+    color: #022C22;
+    background-color: #BEF264;
+    border: none;
+}
+
+/*******    PARTNERS    *******/
+
+.hero-section__image1 {
+    position: absolute;
+    background-image: url('/images/Image_1.svg');
+    width: 290px;
+    height: 360px;
+    border-radius: 16px;
+    left: -31vw;
+    top: 6vh;
+}
+
+.hero-section__image2 {
+    position: absolute;
+    background-image: url('/images/Image_2.svg');
+    width: 290px;
+    height: 360px;
+    border-radius: 16px;
+    left: 51vw;
+    top: -8vh;
+}
+
+.hero-section__image3 {
+    position: absolute;
+    width: 400px;
+    height: 190px;
+    border-radius: 16px;
+    left: -20vw;
+    top: 60vh;
+    background: 
+        linear-gradient(180deg, rgba(1, 50, 39, 0.247), rgba(1, 50, 39, 0.58), rgb(1, 42, 32)),
+        url('/images/Image_3.svg');
+}
+
+.hero-section__image4 {
+    position: absolute;
+    width: 250px;
+    height: 350px;
+    border-radius: 16px;
+    left: 45vw;
+    top: 45vh;
+    background: 
+        linear-gradient(180deg,#5ad2b600,#5ad2b653, #022c22a8, #022c22df, #022c22),
+        url('/images/Image_4.png');
+}     
