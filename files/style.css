@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+body { 
+    font-family: 'Figtree';
+    width: 100%;
+    margin: 0px;
+}
+
+a, .nav__button { /* GET RID OF BLUE COLOR */
+    text-decoration: none;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+/*******    NAVIGATION    *******/
+
+.nav, .hero-section {
+    background-color: #022C22;
+}
+
+.nav {
+    height: 10vh;
+    padding: 1% 8% 1% 8%;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    color: white;
+    font-size: 16px;
+    font-weight: 200;
+}
+
+.nav__left {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+}
+
+.nav__logo {
+    background-image: url('/icons/Brand_Logo.svg');
+    width: 100px; 
+    height: 30px; 
+    background-size: contain;
+    background-repeat: no-repeat; 
+    background-position: center;
+    margin-right: 20px;
+}
+
+.nav__button {
+    padding: 15px 22px;
+    background-color: transparent; 
+    color: white;
+    border: solid 0.5px white;
+    border-radius: 200px;
+    cursor: pointer;
+}
+
+/*******    HERO SECTION    *******/
