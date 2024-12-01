@@ -5,28 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flow</title>
     <link rel="stylesheet" href="style.css">
-    <script src="functions.js"></script>
+    <script src="/files/functions.js" defer></script>
 </head>
 
     <body>
 
-        <nav class="nav">                          <!--        NAVIGATION        -->
+        <!---------        NAVIGATION    --------   -->
 
-            <nav class="nav__left">
-                <div class="nav__logo"></div>
-                <a href="#" class="nav__link nav__link--about">About us</a>
-                <a href="#" class="nav__link nav__link--team">Team</a>
-                <a href="#" class="nav__link nav__link--solutions">Solutions</a>
-                <a href="#" class="nav__link nav__link--blog">Blog</a>
-            </nav>
-
-            <nav class="nav__right">
-                <button class="nav__button">Get in touch</button>
-            </nav>
+        <nav class="nav">       
                 
+            <div class="nav__left">
+                <a href="javascript:void(0)" onclick="scrollToSection('.hero-section')" class="nav__logo"></a>
+                <a href="javascript:void(0)" onclick="scrollToSection('.about-us')" class="nav__link">About us</a>
+                <a href="javascript:void(0)" onclick="scrollToSection('.experts')" class="nav__link">Team</a>
+                <a href="javascript:void(0)" onclick="scrollToSection('.solutions')" class="nav__link">Solutions</a>
+                <a href="javascript:void(0)" onclick="scrollToSection('.blog')" class="nav__link">Blog</a>
+            </div>
+
+                <button class="nav__button">Get in touch</button>
+
         </nav>
+
+
+        <!---------        HERO SECTION    --------   -->
+
             
-        <div class="hero-section">               <!--        HERO SECTION        -->
+        <div class="hero-section">                 
 
             <div class="hero-section__content-wrapper">
                 <div class="hero-section__icon"></div>
@@ -38,20 +42,465 @@
                 </div>
 
                 <div class="hero-section__button-wrapper">
-                    <button class="hero-section__button1">See our solutions</button>
+                    <a href="javascript:void(0)" onclick="scrollToSection('.solutions')" class="hero-section__button1">See our solutions</a>
                     <button class="hero-section__button2">Get in touch</button>
                 </div>
 
-                <div class="hero-section__image1"></div>
-                <div class="hero-section__image2"></div>
-                <div class="hero-section__image3"></div>
-                <div class="hero-section__image4"></div>
+                    <div class="hero-section__image1"></div>
+                    <div class="hero-section__image2"></div>
+                    <div class="hero-section__image3"></div>
+                    <div class="hero-section__image4"></div>
+                
+            </div> <!--  end of content wrapper  -->
 
+        </div> <!--  end of hero section  -->
+        
+
+        <!---------        PARTNERS    --------   -->
+
+
+        <div class="partners__container">
+            <div class="partners__title">Global partners that trusted us</div> 
+            <div class="partners-logos__wrapper"></div>
+        </div>
+
+        
+        <!---------        SOLUTIONS    --------   -->
+
+
+        <div class="solutions">                    
+                
+            <div class="solutions__container">
+                    
+                    <div class="solutions__logo"></div>
+                    <div class="solutions__title">Key to clean future</div>
+                
+                <div class="solutions__wrapper">
+
+                    <div class="solutions__wrapper__box">
+                        <div class="solutions__wrapped__icon1"></div>
+                        <div class="solutions__wrapped__title">EV charging</div>
+                        <div class="solutions__wrapped__sub-title">EVs use electricity as a power source, which can be generated from renewable energy sources. Our solutions help reducing greenhouse gas emissions in the transportation sector.</div>
+                        <a href="#" class="solutions__wrapped__link">Read more</a>
+                    </div>
+                    
+                    <div class="solutions__wrapper__box">
+                        <div class="solutions__wrapped__icon2"></div>
+                        <div class="solutions__wrapped__title">Wind Energy</div>
+                        <div class="solutions__wrapped__sub-title">Wind turbines harness the kinetic energy of the wind to generate electricity. Wind farms with multiple turbines are commonly used to produce large amounts of clean energy.</div>
+                        <a href="#" class="solutions__wrapped__link">Read more</a>
+                    </div>
+                    
+                    <div class="solutions__wrapper__box">
+                        <div class="solutions__wrapped__icon3"></div>
+                        <div class="solutions__wrapped__title">Solar Energy</div>
+                        <div class="solutions__wrapped__sub-title">Solar panels convert sunlight into electricity. Photovoltaic (PV) cells on these panels capture the energy from the sun and convert it into electrical power.</div>
+                        <a href="#" class="solutions__wrapped__link">Read more</a>
+                    </div>
+                    
+                    <div class="solutions__wrapper__box">
+                        <div class="solutions__wrapped__icon4"></div>
+                        <div class="solutions__wrapped__title">Hydropower</div>
+                        <div class="solutions__wrapped__sub-title">This technology uses the energy from flowing water, such as rivers and dams, to turn turbines and generate electricity. It's one of the oldest forms of renewable energy.</div>
+                        <a href="#" class="solutions__wrapped__link">Read more</a>
+                    </div>
+                    
+                </div> <!--  end of solutions wrapper  -->
+            
+            </div> <!--  end of solutions container  -->
+
+        </div> <!--  end of solutions  -->
+
+
+        <!---------        ABOUT US    --------   -->
+
+
+        <div class="about-us">  
+
+            <div class="about-us__main">
+                    <div class="about-us__main-title">About us</div>
+
+                <div class="about-us__right">
+                    <div class="about-us__text">At Flow, we're committed to a sustainable future. As a pioneering force in the green energy sector, we've been at the forefront of the transition to clean, renewable power sources. Our mission is simple yet profound: to create a world where energy is not only abundant but also environmentally responsible. We believe that by harnessing the power of nature, we can power the world and protect it simultaneously.</div>
+                    <button class="about-us__button">Read more</button>
+                </div>
+
+            </div> <!--  end of main about us  -->
+
+            <div class="about-us__images"></div>
+
+            <div class="about-us__statistics">
+
+                <div class="about-us__statistics__box">
+                    <div class="about-us__statistics__title">5,000 Mwh</div>
+                    <div class="about-us__statistics__subtitle">Renewable Energy Generated</div>
+                </div>
+
+                <div class="about-us__statistics__box">
+                    <div class="about-us__statistics__title">2,500+</div>
+                    <div class="about-us__statistics__subtitle2">Metric Tons of CO2 Reduced</div>
+                </div>
+
+                <div class="about-us__statistics__box">
+                    <div class="about-us__statistics__title">10,000+</div>
+                    <div class="about-us__statistics__subtitle">Customers Served</div>
+                </div>
+               
+                <div class="about-us__statistics__box">
+                    <div class="about-us__statistics__title">15%</div>
+                    <div class="about-us__statistics__subtitle">Avg. Energy Saved</div>
+                </div>
+
+            </div> <!--  end of statistics  -->
+
+        </div> <!--  end of about us  -->
+
+        
+
+        <!---------        EXPERTS    --------   -->
+
+
+        <div class="experts">     
+
+            <div class="experts__content-wrapper">
+
+                <div class="experts__left">
+                    <div class="experts__title">Meet our experts</div>
+                    <div class="experts__subtitle">Our team boasts top green energy experts, driving innovation in sustainability.</div>
+                </div>
+
+                    <div class="experts__arrow-icon"></div>
+
+            </div> <!--  end of content wrapper  -->
+
+            <div class="experts__people-container">
+               
+                <div class="experts__people-container__cards">
+                    <div class="experts__person">
+                        <div class="person__image1"></div>
+                        <div class="experts__person__content-wrapper">
+                            <div class="experts__person-title">Jenny Wilson</div>
+                            <div class="experts__person-subtitle">Senior Sustainability Consultant</div>
+                        </div>
+                    </div>
+                
+                    <div class="experts__person">
+                        <div class="person__image2"></div>
+                        <div class="experts__person__content-wrapper">
+                            <div class="experts__person-title">Cameron Williamson</div>
+                            <div class="experts__person-subtitle">Senior Sustainability Consultant</div>
+                        </div>
+                    </div>
+                
+                    <div class="experts__person">
+                        <div class="person__image3"></div>
+                        <div class="experts__person__content-wrapper">
+                            <div class="experts__person-title">Courtney Henry</div>
+                            <div class="experts__person-subtitle">Energy Analysts</div>
+                        </div>
+                    </div>
+                
+                    <div class="experts__person">
+                        <div class="person__image4"></div>
+                        <div class="experts__person__content-wrapper">
+                            <div class="experts__person-title">Dianne Russell</div>
+                            <div class="experts__person-subtitle">Senior Renewable Energy Engineer</div>
+                        </div>
+                    </div> <!--  end of person  -->
+                </div>
+                
+
+            </div> <!--  end of people container  -->
+
+        </div> 
+
+        
+
+        <!---------        CALL SECTION    --------   -->
+
+
+        <div class="call-section"> 
+
+            <div class="call-section__left">
+                <div class="call-section__title">Join the green movement</div>
+                <div class="call-section__subtitle">Our commitment to green energy is paving the way for a cleaner, <br> healthier planet. </div>
+                <button class="call-section__button">Get in touch</button>
             </div>
 
+            <div class="call-section__image"></div>
+
+        </div> 
+
+        
+
+        <!---------        BLOG    --------   -->
+
+
+        
+        <div class="blog"> 
+
+            <div class="blog-top">
+
+                    <div class="blog__title">Blog</div>
+
+                    <button class="blog__button">
+                        <div class="blog__button__text">See all</div>
+                        <div class="blog__arrow-icon"></div>
+                    </button>
+    
+            </div> <!--  end of blog top  -->
+        
+            <div class="blog-bottom">
+            
+                <div class="blog-section2">
+
+                    <div class="blog-section2__main-image"></div>
+
+                        <div class="blog-section2__tags-wrapper">
+                            <div class="blog-section2-tag1">Solar power</div>
+                            <div class="blog-section2-tag2">Solutions</div>
+                        </div>
+
+                        <a href="#"><div class="blog-section2-title">Harnessing the Power of the Sun: Exploring the World of Solar Energy</div></a>
+                        <div class="blog-section2-subtitle">Solar energy is revolutionizing the way we power our world. In this blog post, we'll delve into the incredible potential of solar technology, its environmental...</div>
+                        
+                        <div class="blog__author-wrapper">
+                            <a href="#" class="blog-section2__avatar-icon1"></a>
+                            <a href="#" class="blog__author-name">Leslie Alexander</a>
+                            <div class="blog__dot-icon"></div>
+                            <div class="blog__time">9 min read</div>
+                        </div>
+                        
+                </div> <!--  end of section 2 -->
+
+            <div class="blog-section3">
+                <div class="blog-section3__image1"></div>
+                <div class="blog-section3__image2"></div>
+                <div class="blog-section3__image3"></div>
+            </div>
+
+            <div class="blog-section4">
+
+                <div class="blog-section4__box">
+                    <a href="#"><div class="blog-section4-title">Wind Power: A Breath of Fresh Air for Clean Energy Enthusiasts</div></a>
+                    
+                    <div class="blog__author-wrapper">
+                        <a href="#"><div class="blog-section4__avatar-icon1"></div></a>
+                        <a href="#"><div class="blog__author-name">Wade Warren</div></a>
+                        <div class="blog__dot-icon"></div>
+                        <div class="blog__time">7 min read</div>
+                    </div>
+                </div>
+
+                <div class="blog-section4__box">
+                    <a href="#"><div class="blog-section4-title">From Trash to Treasure: The Promising World of Biomass Energy</div></a>
+                    
+                    <div class="blog__author-wrapper">
+                        <a href="#"><div class="blog-section4__avatar-icon2"></div></a>
+                        <a href="#"><div class="blog__author-name">Jenny Wilson</div></a>
+                        <div class="blog__dot-icon"></div>
+                        <div class="blog__time">12 min read</div>
+                    </div>
+                </div>
+
+                <div class="blog-section4__box">
+                    <a href="#"><div class="blog-section4-title">Hydrogen: Fueling the Green Energy Revolution</div></a>
+                    
+                    <div class="blog__author-wrapper">
+                        <a href="#"><div class="blog-section4__avatar-icon3"></div></a>
+                        <a href="#"><div class="blog__author-name">Leslie Alexander</div></a>
+                        <div class="blog__dot-icon"></div>
+                        <div class="blog__time">5 min read</div>
+                    </div>
+
+                </div> <!--  end of box -->
+
+            </div> <!--  end of section 4 -->
+
+        </div> <!--  end of  bottom blog -->
+
+    </div> <!--  end of blog -->
+
+        
+
+        <!---------        F   A   Q    --------   -->
+
+
+        
+       <div class="faq"> 
+
+            <div class="faq__section1">
+                <div class="faq__section1-title">FAQ</div>
+                <div class="faq__section1-subtitle">Here you will find the answers to the frequently asked questions.</div>
+            </div>
+
+            <div class="faq__section2">
+
+                <div class="faq__section2-box">
+                    <div class="faq__section2-question">What is green energy?</div>
+                    <div class="faq__section2-icon"></div>
+                </div>
+                
+                <div class="faq__section2-box">
+                    <div class="faq__section2-question">How does green energy benefit the environment?</div>
+                    <div class="faq__section2-icon"></div>
+                </div>
+                
+                <div class="faq__section2-box">
+                    <div class="faq__section2-question">What green energy solutions does your company offer?</div>
+                    <div class="faq__section2-icon"></div>
+                </div>
+                
+                <div class="faq__section2-box">
+                    <div class="faq__section2-question">What support services do you offer after installing green energy solutions?</div>
+                    <div class="faq__section2-icon"></div>
+                </div>
+                
+                <div class="faq__section2-box">
+                    <div class="faq__section2-question">How do solar panels work?</div>
+                    <div class="faq__section2-icon"></div>
+                </div>
+                
+                <div class="faq__section2-box">
+                    <div class="faq__section2-question">What is green energy?</div>
+                    <div class="faq__section2-icon"></div>
+                </div>
+                
+                <div class="faq__section2-box">
+                    <div class="faq__section2-question">How does green energy benefit the environment?</div>
+                    <div class="faq__section2-icon"></div>
+                </div>
+                
+                <div class="faq__section2-box">
+                    <div class="faq__section2-question">What green energy solutions does your company offer?</div>
+                    <div class="faq__section2-icon"></div>
+                </div>
+                
+                <div class="faq__section2-box">
+                    <div class="faq__section2-question">What support services do you offer after installing green energy solutions?</div>
+                    <div class="faq__section2-icon"></div>
+                </div>
+                
+                <div class="faq__section2-box">
+                    <div class="faq__section2-question">How do solar panels work?</div>
+                    <div class="faq__section2-icon"></div>
+                </div>
+                
+            </div> <!--  end of section2 -->
+
+            <div class="faq__section3">
+                <div class="faq__section3-icon"></div>
+                <div class="faq__section3-title">Still have questions?</div>
+                <div class="faq__section3-subtitle">For assistance, please visit our <a href="#" class="faq__section3--highlight--underline">Contact Us</a> page or call our customer support hotline at <a href="" class="faq__section3--highlight">(671) 555-0110</a>. Our dedicated team is ready to help you on your journey to a greener, more sustainable future.</div>
+            </div>
+
+        </div> 
+
+        
+        
+
+        <!---------        FEEDBACK    --------   -->
+
+
+        
+       <div class="feedback">
+
+            <div class="feedback__section1">
+                <div class="feedback__section1-title">What our customers say</div>
+                <div class="feedback__section1-subtitle">Thousands of happy customers that changed their energy use </div>
+            </div>
+
+            <div class="feedback__section2">
+                <div class="feedback__section2-icon1"></div>
+
+                <div class="feedback__section2-content-wrapper">
+                    <div class="feedback__section2-back-image"></div>
+                    <div class="feedback__section2-icon-stars"></div>
+                    <div class="feedback__section2-quote"></div>
+                    <div class="feedback__section2-name"></div>
+                    <div class="feedback__section2-work"></div>
+                </div>
+
+                <div class="feedback__section2-icon2"></div>
+            </div>
+        </div>
+
+        
+        
+
+        <!---------        FORM    --------   -->
+
+
+        
+       <div class="form"> 
+
+            <div class="form__title">Your Source for Green Energy Updates</div>
+
+            <form class="form__application">
+                <input type="email" class="form__application__input" placeholder="Your e-mail...">
+                <button class="form__application__button">Get in touch</button>
+            </form>
 
         </div>
+
         
+
+        <!---------        FOOTER     --------   -->
+
+
+        
+       <div class="footer">
+
+        <div class="footer__back-image"></div> 
+
+        <div class="footer__top">
+            <a href="javascript:void(0)" onclick="scrollToSection('.nav')"><div class="footer__logo"></div></a>
+            
+            <div class="footer__section">
+                <div class="footer__section__title">Platform</div>
+                <a href="javascript:void(0)" class="footer__section__link" onclick="scrollToSection('.solutions')">Solutions</a>
+                <a href="#"  class="footer__section__link">How it works</a>
+                <a href="#" class="footer__section__link">Pricing</a>
+            </div>
+
+            <div class="footer__section">
+                <div class="footer__section__title">Company</div>
+                <a href="javascript:void(0)" class="footer__section__link" onclick="scrollToSection('.about-us')">About</a>
+                <a href="#" class="footer__section__link">Our Mission</a>
+                <a href="#" class="footer__section__link">Careers <span class="footer__link__highlight">HIRING</span></a>
+                <a href="#" class="footer__section__link">Contact</a>
+            </div>
+
+            <div class="footer__section">
+                <div class="footer__section__title">Resources</div>
+                <a href="javascript:void(0)" class="footer__section__link" onclick="scrollToSection('.blog')">Blog</a>
+                <a href="#" class="footer__section__link">Help Center</a>
+                <a href="#" class="footer__section__link">Support</a>
+            </div>
+
+            <div class="footer__social-media__box">
+                <div class="footer__social-media__item">
+                    <div class="footer__social-media__icon1"></div>
+                    <a href="#" class="footer__social-media__text">Follow us on Facebook</a>
+                </div>
+
+                <div class="footer__social-media__item">
+                    <div class="footer__social-media__icon2"></div>
+                    <a href="#" class="footer__social-media__text">Follow us on Instagram</a>
+                </div>
+
+                <div class="footer__social-media__item">
+                    <div class="footer__social-media__icon3"></div>
+                    <a href="https://www.linkedin.com/posts/paul-dickau_fightme-activity-7268193397390163968-H1lG?utm_source=share&utm_medium=member_desktop" class="footer__social-media__text">Follow us on LinkedIn</a>
+                </div>
+            </div> <!--  end of social media box --> 
+
+        </div> <!--  end of footer top -->
+
+            <div class="footer__bottom">© 2024 Flow. All rights reserved. </div>
+
+        </div> <!--  end of footer -->
+
     </body>
 
 </html>
