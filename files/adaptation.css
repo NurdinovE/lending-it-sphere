@@ -1,0 +1,213 @@
+@media (max-width: 1350px) {
+    body {
+        font-size: 12px;
+    }
+
+    .hero-section__title {
+        font-size: 70px;
+        font-weight: 500;
+        line-height: 70px;
+    }
+
+    .nav__button {
+        padding: 10px 20px;
+    }
+
+    .hero-section__content-wrapper {
+        width: 100%;
+        padding: 0 5%;
+    }
+
+    .partners__title, .solutions__title, 
+    .about-us__main-title, .call-section__title {
+        font-size: 40px;
+    }
+
+    .call-section__subtitle {
+        font-size: 16px; /* ?????????? ?????? */
+    }
+
+    .about-us__main {
+        margin: 7vh 5% 10vh 5%;
+    }
+
+    .faq__section1-title, .faq__section3-title {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .faq__section3-subtitle {
+        padding: 0 10%;
+    }
+
+    .faq {
+        margin-top: 40px;
+    }
+
+    .footer__section__title, .footer__section__link {
+        font-size: 14px; /* ?????????? ?????? ? ?????? */
+    }
+
+    .footer__bottom {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 10px;
+    }
+
+    .nav {
+        flex-direction: column;
+        gap: 10px;
+        padding: 5% 5%;
+    }
+
+    .nav__left {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .hero-section {
+        flex-direction: column;
+        height: auto;
+        padding: 20px 0;
+    }
+
+    .hero-section__title {
+        font-size: 48px;
+        line-height: 1.2;
+        padding-top: 16px;
+    }
+
+    .hero-section__sub-title {
+        font-size: 16px;
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .partners__title, .solutions__title, 
+    .about-us__main-title, .call-section__title {
+        font-size: 32px;
+        line-height: 1.2;
+    }
+
+    .call-section__subtitle {
+        font-size: 14px; /* ?????????? ?????? */
+    }
+
+    .partners__container {
+        flex-direction: column;
+        height: auto;
+        padding: 0 5%;
+    }
+
+    .solutions__container {
+        height: auto;
+        padding: 20px 5%;
+    }
+
+    .about-us__main {
+        flex-direction: column;
+        gap: 30px;
+        padding: 20px 10%;
+        margin: 10vh 5% 10vh 5%;
+    }
+
+    .faq__section2-box {
+        height: auto;
+        padding: 20px;
+    }
+
+    .faq__section2 {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, auto);
+        gap: 20px;
+    }
+
+    .faq__section3-subtitle {
+        padding: 0 15%;
+    }
+
+    .blog, .faq, .feedback, .form {
+        padding: 20px;
+    }
+
+    .footer {
+        height: auto;
+        grid-template-rows: auto;
+        padding: 20px 10px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    body {
+        font-size: 8px;
+    }
+
+    .hero-section__title {
+        font-size: 32px;
+        padding-top: 8px;
+    }
+
+    .hero-section__sub-title {
+        font-size: 12px;
+        line-height: 1.2;
+    }
+
+    .nav__button, .hero-section__button1, .hero-section__button2 {
+        font-size: 12px;
+        padding: 8px 16px;
+    }
+
+    .about-us__main {
+        gap: 40px;
+        margin: 10vh 5%;
+        padding: 20px 10px;
+    }
+
+    .faq__section2 {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .faq__section2-box {
+        height: auto;
+        padding: 20px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .faq__section3-subtitle {
+        font-size: 14px;
+        line-height: 20px;
+        padding: 0 10%;
+    }
+
+    .call-section__title {
+        font-size: 24px; /* ?????????? ?????? */
+    }
+
+    .call-section__subtitle {
+        font-size: 12px; /* ?????????? ?????? */
+    }
+
+    .blog, .feedback, .form {
+        padding: 10px;
+    }
+
+    .footer {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .footer__section__title, .footer__section__link {
+        font-size: 12px; /* ?????????? ?????? ? ?????? */
+    }
+
+    .footer__bottom {
+        font-size: 10px;
+    }
+}
