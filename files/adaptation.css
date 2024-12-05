@@ -3,6 +3,14 @@
         font-size: 12px;
     }
 
+
+        .footer__social-media__icon1, 
+        .footer__social-media__icon2, 
+        .footer__social-media__icon3 {
+            width: 32px; 
+            height: 32px;
+        }
+
     .hero-section__title {
         font-size: 70px;
         font-weight: 500;
@@ -14,7 +22,7 @@
     }
 
     .hero-section__content-wrapper {
-        width: 100%;
+        width: -20%;
         padding: 0 5%;
     }
 
@@ -23,8 +31,12 @@
         font-size: 40px;
     }
 
+    .call-section__title {
+        line-height: 40px;
+    }
+
     .call-section__subtitle {
-        font-size: 16px; /* ?????????? ?????? */
+        font-size: 16px;
     }
 
     .about-us__main {
@@ -45,28 +57,140 @@
     }
 
     .footer__section__title, .footer__section__link {
-        font-size: 14px; /* ?????????? ?????? ? ?????? */
+        font-size: 14px; 
     }
 
     .footer__bottom {
         font-size: 12px;
     }
+
+    .footer__social-media__icon1, .footer__social-media__icon2, 
+    .footer__social-media__icon3 {
+        width: 35px;
+        height: 35px;
+    }
+
+    .about-us__text {
+        width: 50vw;
+    }
+
+    .experts__content-wrapper {
+        margin-left: 4vh;
+        padding-right: 4vh;
+    }
+
 }
 
 @media (max-width: 768px) {
+    .about-us__statistics__title {
+        font-size: 32px;
+    }
+
+    .blog {
+        padding: 3vh 4vw;
+        grid-template-rows: auto auto;
+    }
+
+    .blog-top {
+        grid-template-columns: 1fr; 
+        gap: 2vh;
+        text-align: center;
+    }
+
+    .blog-bottom {
+        grid-template-columns: 1fr;
+    }
+
+    .blog-section2-title {
+        font-size: 1.8rem; 
+    }
+
+    .blog-section2-subtitle {
+        font-size: 1rem; 
+    }
+
+    .blog-section2__main-image {
+        max-width: 90%;
+    }
+
+    .blog-section3__image1, 
+    .blog-section3__image2, 
+    .blog-section3__image3 {
+        width: 90%; 
+        max-width: 200px;
+        margin: 0 auto;
+    }
+
+    .blog__button {
+        padding: 0.4rem 0.8rem; 
+        font-size: 0.9rem;
+    }
+
+    .solutions__wrapper {
+        font-size: 12px;
+        padding: 20px 5vw 32px 5vw;
+    }
+
+    .solutions__title {
+        padding: 5vh 0 2vh 5vw;
+        font-size: 50px;
+    }
+
+    .solutions__logo {
+        margin: 2vh 5vw 20px 5vw;
+    }
+
+    .footer {
+        margin: 10vh 5vh 2vh 5vh;
+        grid-template-rows: auto;
+        gap: 30px;
+    }
+
+    .footer__top {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .footer__section__title {
+        font-size: 14px;
+        padding-bottom: 20px;
+    }
+
+    .footer__section__link {
+        font-size: 14px;
+        padding-bottom: 20px;
+    }
+
+    .footer__social-media__icon1, .footer__social-media__icon2, 
+    .footer__social-media__icon3 {
+        width: 35px;
+        height: 35px;
+    }
+
+    .footer__bottom {
+        text-align: center;
+        font-size: 12px;
+        padding-right: 0;
+    }
+
     body {
         font-size: 10px;
     }
 
     .nav {
-        flex-direction: column;
         gap: 10px;
         padding: 5% 5%;
+        font-size: 12px;
+    }
+
+    .nav__logo {
+        width: 50px; 
+        height: 20px; 
+        margin-right: 10px;
     }
 
     .nav__left {
-        flex-direction: column;
-        gap: 8px;
+        gap: 10px;
     }
 
     .hero-section {
@@ -94,7 +218,7 @@
     }
 
     .call-section__subtitle {
-        font-size: 14px; /* ?????????? ?????? */
+        font-size: 14px; 
     }
 
     .partners__container {
@@ -139,10 +263,80 @@
         grid-template-rows: auto;
         padding: 20px 10px;
     }
+    
+    .about-us__text {
+        font-size: 16px;
+    }
+
+    .hero-section__content-wrapper {
+        width: -30%;
+        padding: 0 5%;
+    }
 }
 
-
 @media (max-width: 480px) {
+
+    .experts__title {
+        font-size: 48px;
+        line-height: 48px;
+    }
+
+    .blog {
+        padding: 2vh 3vw;
+        gap: 2vh;
+    }
+
+    .blog-section2-title {
+        font-size: 1.5rem;
+    }
+
+    .blog-section2-subtitle {
+        font-size: 0.9rem;
+    }
+
+    .blog-section2__main-image {
+        max-width: 100%;
+    }
+
+    .blog__button {
+        padding: 0.3rem 0.6rem;
+        font-size: 0.8rem;
+    }
+    .footer {
+        margin: 5vh 2vh;
+        gap: 20px;
+        padding: 0;
+    }
+
+    .footer__top {
+        gap: 15px;
+    }
+
+    .footer__section__title {
+        font-size: 12px;
+    }
+
+    .footer__section__link {
+        font-size: 12px;
+    }
+
+    .footer__social-media__icon1, .footer__social-media__icon2,
+    .footer__social-media__icon3 {
+        width: 32px;
+        height: 32px;
+    }
+
+    .footer__social-media__box {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .footer__bottom {
+        text-align: center;
+        font-size: 10px;
+        padding-right: 0;
+    }
+
     body {
         font-size: 8px;
     }
@@ -157,9 +351,13 @@
         line-height: 1.2;
     }
 
+    .nav {
+        font-size: 10px;
+    }
+
     .nav__button, .hero-section__button1, .hero-section__button2 {
-        font-size: 12px;
-        padding: 8px 16px;
+        font-size: 10px;
+        padding: 5px 10px;
     }
 
     .about-us__main {
@@ -186,11 +384,11 @@
     }
 
     .call-section__title {
-        font-size: 24px; /* ?????????? ?????? */
+        font-size: 24px;
     }
 
     .call-section__subtitle {
-        font-size: 12px; /* ?????????? ?????? */
+        font-size: 12px;
     }
 
     .blog, .feedback, .form {
@@ -204,7 +402,7 @@
     }
 
     .footer__section__title, .footer__section__link {
-        font-size: 12px; /* ?????????? ?????? ? ?????? */
+        font-size: 12px; 
     }
 
     .footer__bottom {

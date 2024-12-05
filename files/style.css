@@ -18,16 +18,17 @@ a, .nav__button { /* GET RID OF BLUE COLOR */
     font-size: inherit;
 }
 
-.blog-section3__image3, .blog-section3__image2,
+.blog-section3__image3, .solutions__logo, .blog-section3__image2,
 .blog-section3__image1, .blog-section2__main-image, .blog-section2__avatar-icon1, .blog-section4__avatar-icon1, .blog-section4__avatar-icon2,
 .blog-section4__avatar-icon3, .hero-section__image1, .hero-section__image2, .hero-section__image3,
 .hero-section__image4, .hero-section__icon, .nav__logo, .partners-logos__wrapper, 
 .solutions__wrapped__icon1, .solutions__wrapped__icon2, 
 .solutions__wrapped__icon3, .solutions__wrapped__icon4, .solutions__logo, .experts__arrow-icon,
-.person__image1, .person__image2, .faq__section3-icon,
+.person__image1, .person__image2, .faq__section3-icon, .footer__social-media__icon3, .footer__social-media__icon2,
+.footer__social-media__icon1, 
 .person__image3, .person__image4,.call-section__image,.footer__logo,
 .footer__back-image,  .image1, .image2, .gallery_image1, .gallery_image2,
-.gallery_image3, .gallery_image4, .gallery_image5,.faq__section2-icon, .feedback__section2-icon-stars{
+.gallery_image3, .gallery_image4, .gallery_image5,.faq__section2-icon, .feedback__section2-icon-stars , .hero-section{
     background-size: contain;
     background-repeat: no-repeat; 
     background-position: center;
@@ -68,7 +69,7 @@ a, .nav__button { /* GET RID OF BLUE COLOR */
 }
 
 .nav__logo {
-    background-image: url('/icons/Brand_Logo.svg');
+    background-image: url('../icons/Brand_Logo.svg');
     width: 100px; 
     height: 30px; 
     margin-right: 20px;
@@ -86,8 +87,10 @@ a, .nav__button { /* GET RID OF BLUE COLOR */
 /*******    HERO SECTION    *******/
 
 .hero-section {
+    overflow: hidden;
     justify-content: center; 
     height: 90vh;
+    background-image: url('../images/Hero_section/Background_hero-sections.PNG');
 }
 
 .hero-section__content-wrapper {
@@ -102,7 +105,7 @@ a, .nav__button { /* GET RID OF BLUE COLOR */
 }
 
 .hero-section__icon {
-    background-image: url('/icons/Caption.svg');
+    background-image: url('../icons/Caption.svg');
     position: absolute;
     top: -5px;
     width: 500px; 
@@ -153,7 +156,7 @@ a, .nav__button { /* GET RID OF BLUE COLOR */
 
 .hero-section__image1 {
     position: absolute;
-    background-image: url('/images/Hero_section/Image_1.png');
+    /* background-image: url('../images/Hero_section/Image_1.png'); */
     width: 290px;
     height: 360px;
     border-radius: 16px;
@@ -163,7 +166,7 @@ a, .nav__button { /* GET RID OF BLUE COLOR */
 
 .hero-section__image2 {
     position: absolute;
-    background-image: url('/images/Hero_section/image_2.png');
+    /* background-image: url('../images/Hero_section/image_2.png'); */
     width: 280px;
     height: 360px;
     border-radius: 16px;
@@ -178,9 +181,9 @@ a, .nav__button { /* GET RID OF BLUE COLOR */
     border-radius: 16px;
     left: -20vw;
     top: 60vh;
-    background: 
+    /* background:  
         linear-gradient(180deg, rgba(1, 50, 39, 0.247), rgba(1, 50, 39, 0.58), rgb(1, 42, 32)),
-        url('/images/Hero_section/Image_3.png');
+        url('../images/Hero_section/Image_3.png'); */
 }   
 
 .hero-section__image4 {
@@ -190,15 +193,15 @@ a, .nav__button { /* GET RID OF BLUE COLOR */
     border-radius: 16px;
     left: 45vw;
     top: 45vh;
-    background: 
+    /* background:  
         linear-gradient(180deg,#5ad2b600,#5ad2b653, #022c2290, #022c22d8, #022c22, #022c22),
-        url('/images/Hero_section/Image_4.png');
+        url('../images/Hero_section/Image_4.png'); */
 }        
 
 /*******    PARTNERS    *******/
 
 .partners__container {
-    height: 70vh;
+    height: auto;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -207,7 +210,7 @@ a, .nav__button { /* GET RID OF BLUE COLOR */
   }
   
   .partners__title {
-    padding: 20vh 0 10vh 0;
+    padding: 10vh 0 2vh 0;
     font-size: 48px;
     font-weight: 400;
     width: 30vw;
@@ -223,7 +226,6 @@ a, .nav__button { /* GET RID OF BLUE COLOR */
     display: flex;
     gap: 0;
     animation: slide 10s linear infinite;
-
   }
   
   .partner-logos__slider-track:hover {
@@ -238,11 +240,11 @@ a, .nav__button { /* GET RID OF BLUE COLOR */
   }
   
   .image1 {
-    background-image: url('/images/Partners/Logo_1.svg');
+    background-image: url('../images/Partners/Logo_1.svg');
   }
   
   .image2 {
-    background-image: url('/images/Partners/Logo_2.svg');
+    background-image: url('../images/Partners/Logo_2.svg');
   }
   
   @keyframes slide {
@@ -253,19 +255,19 @@ a, .nav__button { /* GET RID OF BLUE COLOR */
 /*******    SOLUTIONS    *******/
 
 .solutions {
+    margin: 10vh 0;
     align-items: center; 
     justify-content: center;
     flex-direction: column;
     display: flex;
-    height: 160vh;
-    overflow: hidden;
+    height: auto;
 }
 
 .solutions__logo {
-    background-image: url('/icons/Solutions/Solutions_Logo.svg');
-    min-width: 80vw;
+    background-image: url('../icons/Solutions/Subtitle.svg');
+    min-width: 60vw;
     min-height: 10vh;
-    margin: 10vh 0 50px 10vh;
+    margin: 5vh 5vw 50px 5vw;
 }
 
 .solutions__title {
@@ -279,7 +281,6 @@ a, .nav__button { /* GET RID OF BLUE COLOR */
 
 .solutions__container {
     width: 95vw;
-    height: auto;
     background-color: #FFF7ED;
     border-radius: 20px;
     display: flex; 
@@ -289,7 +290,7 @@ a, .nav__button { /* GET RID OF BLUE COLOR */
 
 .solutions__wrapper {
     width: 90vw;
-    height:70vh;
+    height: auto;
     display: grid; 
     justify-content: center; 
     align-items: center; 
@@ -326,16 +327,16 @@ a, .nav__button { /* GET RID OF BLUE COLOR */
 }
 
 .solutions__wrapped__icon1 {
-    background-image: url('/icons/Solutions/Icon1.svg');
+    background-image: url('../icons/Solutions/Icon1.svg');
 }
 .solutions__wrapped__icon2 {
-    background-image: url('/icons/Solutions/Icon2.svg');
+    background-image: url('../icons/Solutions/Icon2.svg');
 }
 .solutions__wrapped__icon3 {
-    background-image: url('/icons/Solutions/Icon3.svg');
+    background-image: url('../icons/Solutions/Icon3.svg');
 }
 .solutions__wrapped__icon4 {
-    background-image: url('/icons/Solutions/Icon4.svg');
+    background-image: url('../icons/Solutions/Icon4.svg');
 }
 
 /*******    ABOUT US    *******/ 
@@ -365,10 +366,11 @@ a, .nav__button { /* GET RID OF BLUE COLOR */
 
 .about-us__statistics {
     height: 50vh;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
     justify-content: center;
+    gap: 5vw;
     align-items: center;
-    justify-content: space-evenly;
     text-align: center;
     margin: 4vh 11vh 0 11vh;
 }
@@ -420,19 +422,19 @@ a, .nav__button { /* GET RID OF BLUE COLOR */
   }
   
   .gallery_image1 {
-    background-image: url('/images/Gallery/Image_1.png');
+    background-image: url('../images/Gallery/Image_1.png');
   }
   .gallery_image2 {
-    background-image: url('/images/Gallery/image_2.png');
+    background-image: url('../images/Gallery/image_2.png');
   }
   .gallery_image3 {
-    background-image: url('/images/Gallery/Image_3.png');
+    background-image: url('../images/Gallery/Image_3.png');
   }
   .gallery_image4 {
-    background-image: url('/images/Gallery/Image_4.png');
+    background-image: url('../images/Gallery/Image_4.png');
   }
   .gallery_image5 {
-    background-image: url('/images/Gallery/Image_5.svg');
+    background-image: url('../images/Gallery/Image_5.svg');
   }
   
   @keyframes slide1 {
@@ -444,7 +446,7 @@ a, .nav__button { /* GET RID OF BLUE COLOR */
 /*******    EXPERTS    *******/ 
 
 .experts {
-    height: 100vh;
+    height: auto;
     padding-bottom: 20vh;
     overflow: hidden;
 }
@@ -468,15 +470,15 @@ a, .nav__button { /* GET RID OF BLUE COLOR */
 .experts__arrow-left, .experts__arrow-right, 
 .feedback__section2-icon-left, .feedback__section2-icon-right{
     width: 40px;
-    height: 40px;
+    height: auto;
     cursor: pointer;
 }
 
 .experts__arrow-left {
-    background-image: url('/icons/Arrow_Left_Grey.svg');
+    background-image: url('../icons/Arrow_Left_Grey.svg');
 }
 .experts__arrow-right {
-    background-image: url('/icons/Arrow_Right_Black.svg');
+    background-image: url('../icons/Arrow_Right_Black.svg');
 }
 
 .experts__person {
@@ -507,9 +509,7 @@ a, .nav__button { /* GET RID OF BLUE COLOR */
     margin-left: 5px;
 }
 
-.experts__people-container {
-    height: 75vh;
-}
+
 .experts__people-container__cards{
     margin-left: 4vw;
     margin-right: 0;
@@ -521,7 +521,7 @@ a, .nav__button { /* GET RID OF BLUE COLOR */
 .experts__person__content-wrapper {
     background-color: white;
     width: 280px;
-    height: 80px;
+    height: auto;
     border-radius: 8px;
     padding: 16px;
     position: absolute;
@@ -536,46 +536,48 @@ a, .nav__button { /* GET RID OF BLUE COLOR */
 }
 
 .person__image1, .person__image2,
-.person__image3  {
+.person__image3, .person__image4   {
     width: 312px;
     height: 432px;
     border-radius: 16px;
 }
 
 .person__image1 {
-    background-image: url('/images/Experts/Image_Person1.png');
+    background-image: url('../images/Experts/Image_Person1.png');
 }
 .person__image2 {
-    background-image: url('/images/Experts/Image_Person2.png');
+    background-image: url('../images/Experts/Image_Person2.png');
 }
 .person__image3 {
-    background-image: url('/images/Experts/Image_Person3.svg');
+    background-image: url('../images/Experts/Image_Person3.svg');
 }
 .person__image4 {
-    background-image: url('/images/Experts/Image_Person4.svg');
-    width: 300px;
-    height: 432px;
-    border-radius: 20px;
+    background-image: url('../images/Experts/Image_Person4.svg');
 }
+
 
 /*******    CALL SECTION    *******/ 
 
 .call-section {
-    height: 452px;
+    height: auto;
     display: flex;
     justify-content: space-between;
+    overflow: hidden;
 }
 
 .call-section__left {
-    width: 592px;
-    height: 308px;
-    margin-left: 11vh;
+    margin: 0 5px 8vh 5vw;
+    width: 30vw;
+    height: 28vh;
 }
 
 .call-section__image {
-    background-image: url('/images/Image_Call.svg');
-    width: 40vw;
-    height: 100%;
+    background-image: url('../images/Image_Call.svg');
+    width: auto;
+    height: 45vh;
+    aspect-ratio: 3/2;
+    position: relative; 
+    left: 5%;
 }
 
 .call-section__title, .blog__title, .faq__section1-title,
@@ -603,39 +605,6 @@ a, .nav__button { /* GET RID OF BLUE COLOR */
 
 /*******    BLOG    *******/ 
 
-.blog {
-    margin: 10vh 5vw;
-    height: auto;
-    display: grid;
-    grid-template-rows: auto auto;
-    gap: 3vh;
-}
-
-.blog-top {
-    display: grid;
-    grid-template-columns: 2fr .2fr;
-    justify-content: space-between;
-    align-items: center;
-    padding-bottom: 5vh;
-}
-
-.blog-bottom {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 9vw;
-}
-
-.blog-section2 {
-    display: flex;
-    flex-direction: column;
-    gap: 2vh;
-}
-
-.blog-section2-title, .blog-section2-subtitle {
-    max-width: 90%; 
-    font-size: 2rem;
-}
-
 .blog__button {
     width: auto;
     border: solid black 1.5px;
@@ -650,7 +619,7 @@ a, .nav__button { /* GET RID OF BLUE COLOR */
 }
 
 .blog__arrow-icon {
-    background-image: url('/icons/Blog/Arrow_Blog.svg');
+    background-image: url('../icons/Blog/Arrow_Blog.svg');
     width: 1.5rem;
     height: 1.5rem;
 }
@@ -661,8 +630,8 @@ a, .nav__button { /* GET RID OF BLUE COLOR */
 }
 
 .blog-section2__main-image {
-    background-image: url('/images/Main_Image_Blog.svg');
-    max-width: 70vw;
+    background-image: url('../images/Main_Image_Blog.svg');
+    max-width: 100%;
     height: auto;
     aspect-ratio: 3/2;
 }
@@ -671,7 +640,7 @@ a, .nav__button { /* GET RID OF BLUE COLOR */
     cursor: pointer;
     width: 2.5rem;
     height: 2.5rem;
-    background-image: url('/icons/Blog_Avatar/Avatar_0.svg');
+    background-image: url('../icons/Blog_Avatar/Avatar_0.svg');
 }
 
 .blog-section4__avatar-icon1, .blog-section4__avatar-icon2,
@@ -681,28 +650,28 @@ a, .nav__button { /* GET RID OF BLUE COLOR */
 }
 
 .blog-section4__avatar-icon1 {
-    background-image: url('/icons/Blog_Avatar/Avatar_2.svg');
+    background-image: url('../icons/Blog_Avatar/Avatar_2.svg');
 }
 .blog-section4__avatar-icon2 {
-    background-image: url('/icons/Blog_Avatar/Avatar_3.svg');
+    background-image: url('../icons/Blog_Avatar/Avatar_3.svg');
 }
 .blog-section4__avatar-icon3 {
-    background-image: url('/icons/Blog_Avatar/Avatar_1.svg');
+    background-image: url('../icons/Blog_Avatar/Avatar_1.svg');
 }
 .blog__dot-icon {
-    background-image: url('/icons/Blog/Dot-Icon.svg');
+    background-image: url('../icons/Blog/Dot-Icon.svg');
     width: .3rem;
     height: .4rem;
 }
 
 .blog-section3__image1 {
-    background-image: url('/images/Blog_Section3/Image-1.svg');
+    background-image: url('../images/Blog_Section3/Image-1.svg');
 }
 .blog-section3__image2 {
-    background-image: url('/images/Blog_Section3/Image-2.svg');
+    background-image: url('../images/Blog_Section3/Image-2.svg');
 }
 .blog-section3__image3 {
-    background-image: url('/images/Blog_Section3/Image-3.svg');
+    background-image: url('../images/Blog_Section3/Image-3.svg');
 }
 
 .blog-section3__image3, 
@@ -782,6 +751,43 @@ a, .nav__button { /* GET RID OF BLUE COLOR */
     line-height: 1.5;
 }
 
+.blog {
+    padding: 15vh 5vw;
+    height: auto;
+    display: grid;
+    grid-template-rows: auto auto;
+    gap: 3vh;
+    max-width: 100%;
+    box-sizing: border-box; 
+}
+
+.blog-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 5vh;
+}
+
+.blog-bottom {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 5vw;
+}
+
+.blog-section2 {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.blog-section2-title, .blog-section2-subtitle {
+    max-width: 100%; 
+    font-size: 2rem;
+}
+
+
 /*******    F A Q    *******/
 .faq {
     height: auto; 
@@ -830,7 +836,7 @@ a, .nav__button { /* GET RID OF BLUE COLOR */
 }
 
 .faq__section3-icon {
-    background-image: url('/icons/FAQ/icon_faq.svg');
+    background-image: url('../icons/FAQ/icon_faq.svg');
     width: 3rem; 
     height: 3rem;
 }
@@ -878,7 +884,7 @@ a, .nav__button { /* GET RID OF BLUE COLOR */
 .faq__section2-icon {
     width: 1.5rem;
     height: 1.5rem;
-    background-image: url('/icons/FAQ/Plus.svg');
+    background-image: url('../icons/FAQ/Plus.svg');
     background-size: contain;
     background-repeat: no-repeat;
     transition: transform 0.3s ease;
@@ -996,7 +1002,7 @@ a, .nav__button { /* GET RID OF BLUE COLOR */
 }
 
 .feedback__section2-icon-stars {
-    background-image: url('/icons/Stars_Customers.svg');
+    background-image: url('../icons/Stars_Customers.svg');
     width: 120px;
     height: 24px;
     background-size: contain;
@@ -1114,11 +1120,12 @@ a, .nav__button { /* GET RID OF BLUE COLOR */
 
 .footer {
     margin: 14vh 5vh 2vh 5vh;
-    height: 60vh;
+    height: auto;
     display: grid;
     grid-template-rows: 1fr 0.2fr;
     position: relative;
     overflow: hidden;
+    gap: 20px;
 }
 
 .footer__top {
@@ -1127,8 +1134,8 @@ a, .nav__button { /* GET RID OF BLUE COLOR */
     gap: 40px;
 }
 
-.footer__logo{
-    background-image: url('/icons/Footer/Brand_Logo2.svg');
+.footer__logo {
+    background-image: url('../icons/Footer/Brand_Logo2.svg');
     width: 200px; 
     height: 30px;
 }
@@ -1136,18 +1143,21 @@ a, .nav__button { /* GET RID OF BLUE COLOR */
 .footer__link__highlight {
     background-color: #022c22;
     border-radius: 8px;
-    padding: 4px 8px 4px 8px;
-    font-size: 12;
+    padding: 4px 8px;
+    font-size: 12px;
     font-weight: 300;
     color: white;
     line-height: 18px;
     margin-left: 5px;
 }
 
+.footer__section__title {
+    padding-bottom: 30px;
+}
+
 .footer__section__title, .footer__social-media__text {
     font-size: 16px;
     font-weight: 500;
-    padding-bottom: 30px;
 }
 
 .footer__section__link {
@@ -1157,30 +1167,27 @@ a, .nav__button { /* GET RID OF BLUE COLOR */
     padding-bottom: 30px;
 }
 
-.footer__social-media__text {
-    padding: 13px 0 0 5px;
-}
 
 .footer__social-media__icon1 {
-    background-image: url('/icons/Footer/Icon_Footer_FB.svg');
+    background-image: url('../icons/Footer/Icon_Footer_FB.svg');
 }
 .footer__social-media__icon2 {
-    background-image: url('/icons/Footer/Icon_Footer_I.svg');
+    background-image: url('../icons/Footer/Icon_Footer_I.svg');
 }
 .footer__social-media__icon3 {
-    background-image: url('/icons/Footer/Icon_Footer_LI.svg');
+    background-image: url('../icons/Footer/Icon_Footer_LI.svg');
 }
 
 .footer__social-media__box {
-    display: flex;              
-    flex-direction: column;      
-    justify-content: flex-start; 
-    gap: 20px;                  
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
 }
 
 .footer__social-media__item {
-    display: flex;             
-    gap: 20px;                  
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
 
 .footer__social-media__icon3, .footer__social-media__icon2,
@@ -1189,7 +1196,7 @@ a, .nav__button { /* GET RID OF BLUE COLOR */
     height: 48px;
 }
 
-.footer__bottom{
+.footer__bottom {
     text-align: end;
     color: #646A69;
     font-size: 14px;
@@ -1199,10 +1206,10 @@ a, .nav__button { /* GET RID OF BLUE COLOR */
 
 .footer__back-image {
     position: absolute;
-    background-image: url('/images/Lines_Footer.svg');
-    width: 100vw;              
-    height: 100vh;             
-    z-index: -1;            
+    background-image: url('../images/Lines_Footer.svg');
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
 }
 
 .footer__section {
@@ -1210,6 +1217,26 @@ a, .nav__button { /* GET RID OF BLUE COLOR */
     flex-direction: column;
     gap: 10px;
 }
+
+/*******    SCROLL BAR    *******/ 
+
+::-webkit-scrollbar {
+    width: 8px; 
+    height: 8px; 
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background: #ffffff; 
+    border: 1.5px solid rgb(215, 207, 207);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #a0d741;
+    border-radius: 10px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2); 
+}
+
 
 /*******    HOVER EFFECT    *******/ 
 
@@ -1242,7 +1269,7 @@ a, .nav__button { /* GET RID OF BLUE COLOR */
 
 .form__application__button:hover, .call-section__button:hover,
 .about-us__button:hover, .hero-section__button1:hover {
-    background-color: #a0d741;
+    background-color: #85ba2a;
 }
 
 .blog__button:hover {
